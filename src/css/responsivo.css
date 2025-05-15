@@ -1,0 +1,96 @@
+.side-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 280px;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, .1);
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.side-bar li{
+    list-style: none;
+    text-decoration: none;
+    padding: 15px;
+
+}
+
+.side-bar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.side-bar li a:hover {
+    color: #61d367;
+    transition: .5s;
+}
+
+@media (max-width: 785px) {
+     .navegacao .close-nav-desktop{
+        display: none;
+    }
+    .navegacao .menu{
+        display: flex;
+        top: 0;
+        right: 0;
+        position: fixed;
+        margin: 20px;
+        
+    }
+    .menu li{
+        list-style: none;
+    }
+
+    .menu li a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.7rem;
+
+    }
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.3rem;
+        
+    }
+
+    .sobre-mim{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        /* background-color: #ffffff; */
+        height: auto;
+    }
+
+    .lista-projetos{
+        width: 100%;
+    }
+
+    .slider{
+        width: 100%;
+    }
+
+    .sobre-mim .person-card{
+        width: 80%;
+    }
+    .info-principal{
+        position: absolute;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .code-gigante  a i{
+        font-size: 150px;
+    }
+   
+
+}
