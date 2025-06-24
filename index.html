@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1 class="logo"><a href="#">V</a></h1>
+      <nav class="navegacao">
+        <ul class="nav-lista">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a class="contato" href="#"
+              ><i class="fa-solid fa-phone"></i>Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="conteudo">
+      <section class="sobre">
+        <div class="sobre-mim">
+          <h2>Desenvolvedor Portifolio</h2>
+          <h3>Sobre Mim</h3>
+          <p>
+            Me chamo vinicius, sou um desenvolvedor web com foco em front-end.
+          </p>
+          <a href="#">Sobre Mim</a>
+        </div>
+
+        <div class="previw">
+          <div class="experiencias">
+            <ul class="redes-sociais">
+              <li class="github">
+                <a href="https://github.com/vinibsc" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                  <p>Github</p>
+                </a>
+              </li>
+              <li class="instagram">
+                <a href="">
+                  <i class="fa-brands fa-instagram"></i>
+                  <p>Instagram</p>
+                </a>
+              </li>
+              <li class="discord">
+                <a href="">
+                  <i class="fa-brands fa-discord"></i>
+                  <p>Discord</p>
+                </a>
+              </li>
+              <li class="whatsapp">
+                <a href="">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <p>Whatsapp</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="cards-previw">
+            <div class="previw-skills">
+              <h3>Habilidades usadas</h3>
+              <ul class="skills-list">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+              </ul>
+            </div>
+            <div class="card-sobre-mim">
+              <div class="img-eu">
+                <img src="./src/img/eueu.jpg" alt="">
+              </div>
+              <p>Desenvolvedor web com foco em front-end.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projetos swiper">
+        <h3>Projetos Recentes</h3>
+        <div class="card-wrapper">
+          <ul class="lista-projetos swiper-wrapper">
+            <li class="card-projeto swiper-slide">
+              <a href="https://vinibsc.github.io/site-responsivo-miles-morales/" target="_blank"
+                ><img
+                  class="img-card"
+                  src="./src/img/projeto-img-2.png"
+                  alt=""
+                />
+                <h3>Miles Morales</h3>
+                <p>
+                  Pagina para o Miles Morales para mostrar responsividade em
+                  páginas
+                </p>
+              </a>
+            </li>
+            <li class="card-projeto swiper-slide">
+              <a href="https://vinibsc.github.io/projeto-galeria/" target="_blank"
+                ><img
+                  class="img-card"
+                  src="./src/img/projeto-img-3.png"
+                  alt=""
+                />
+                <h3>Galeria</h3>
+                <p>
+                  Uma galeria de imagens responsiva utilizando CSS Grid e
+                  Flexbox.
+                </p>
+              </a>
+            </li>
+            <li class="card-projeto swiper-slide">
+              <a href="https://vinibsc.github.io/projeto-tela-de-login/" target="_blank"
+                ><img
+                  class="img-card"
+                  src="./src/img/projeto-img-4.png"
+                  alt=""
+                />
+                <h3>Tekla login</h3>
+                <p>
+                  Uma página de login para o Tekla, demonstrando autenticação e
+                  responsividade.
+                </p>
+              </a>
+            </li>
+            <li class="card-projeto swiper-slide">
+              <a href=""
+                ><img
+                  class="img-card"
+                  src="./src/img/em-breve-img.jpg"
+                  alt=""
+                />
+                <h3>Projeto 4</h3>
+                <p>em breve mais projetos</p>
+              </a>
+            </li>
+            <li class="card-projeto swiper-slide">
+              <a href=""
+                ><img
+                  class="img-card"
+                  src="./src/img/em-breve-img.jpg"
+                  alt=""
+                />
+                <h3>Projeto 5</h3>
+                <p>em breve mais projetos</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+
+      <section class="habilidades">
+        <h3>Skills</h3>
+        <div class="linguagens">
+          <ul class="skills-list">
+            <li><i class="fa-brands fa-html5"></i></li>
+            <li><i class="fa-brands fa-css3-alt"></i></li>
+            <li><i class="fa-brands fa-js"></i></li>
+            <li><i class="fa-brands fa-react"></i></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

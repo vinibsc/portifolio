@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url("../img/image-fundo.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #e6e6e6;
+  object-fit: cover;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #d7dfe7d8; */
+  padding: 15px;
+  text-align: center;
+}
+.cabecalho .logo a,
+.cabecalho .navegacao .nav-lista a {
+  color: #e6e6e6;
+}
+.cabecalho .navegacao .nav-lista {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.cabecalho .navegacao .contato {
+  background-color: rgba(13, 22, 13, 0.753);
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.cabecalho .navegacao .contato i {
+  color: white;
+}
+
+.conteudo .sobre {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  max-width: 90%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.conteudo .sobre .sobre-mim {
+  margin: 40px;
+  max-width: 400px;
+  height: 100%;
+}
+
+.conteudo .sobre-mim h2 {
+  padding: 30px 0;
+  font-size: 2.6rem;
+  color: white;
+  max-width: 50px;
+}
+
+.conteudo .sobre-mim p {
+  font-size: 1rem;
+  color: white;
+  line-height: 1;
+  padding-bottom: 25px;
+}
+
+.conteudo .sobre-mim a {
+  text-decoration: none;
+  color: #e6e6e6;
+  font-weight: bold;
+  padding: 10px;
+  background: linear-gradient(45deg, rosybrown, #044750);
+  border-radius: 6px;
+  animation: rodaroda 3s linear infinite;
+  -webkit-animation: rodaroda 3s linear alternate 3;
+}
+
+.sobre .previw {
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.cards-previw {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.experiencias ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+.experiencias .redes-sociais li {
+  height: 140px;
+  width: 23%;
+  padding: 10px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  margin: auto;
+}
+
+.experiencias .redes-sociais li a {
+  color: #000000;
+  font-size: 2.6rem;
+  margin: auto;
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.experiencias .redes-sociais a p {
+  font-size: 20px;
+}
+
+.experiencias .redes-sociais .github {
+  background-color: #171b1986;
+  transform: rotateY(360deg);
+  animation: flip 4s linear infinite;
+  animation-delay: 1s;
+}
+.experiencias .redes-sociais .instagram {
+  background-image: linear-gradient(45deg,#c07504d8, #ca2498be);
+  animation: flip 4s linear infinite;
+  animation-delay: 3s;
+}
+.experiencias .redes-sociais .discord {
+  background-color: #5635cc;
+  animation: flip 4s linear infinite;
+  animation-delay: 1s;
+}
+.experiencias .redes-sociais .whatsapp {
+  background-color: #48fc9996;
+  animation: flip 4s linear infinite;
+  animation-delay: 3s;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+.sobre .previw .previw-skills,
+.sobre .previw .card-sobre-mim {
+  background-color: rgba(0, 0, 0, 0.377);
+  padding: 30px 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin-bottom: 40px;
+  height: 140px;
+}
+
+.sobre .previw .card-sobre-mim p {
+  color: #e6e6e6;
+  font-size: 0.7rem;
+  margin: 10px;
+}
+
+.card-sobre-mim{
+  display: flex;
+
+}
+
+.card-sobre-mim .img-eu img{
+  width: 80px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+
+.previw-skills .skills-list{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.previw-skills .skills-list li:nth-child(1),
+.habilidades .linguagens .skills-list li:nth-child(1) {
+  color: #c5461f;
+}
+.previw-skills .skills-list li:nth-child(2),
+.habilidades .linguagens .skills-list li:nth-child(2) {
+  color: #2f4fdf;
+}
+.previw-skills .skills-list li:nth-child(3),
+.habilidades .linguagens .skills-list li:nth-child(3) {
+  color: #b4c51f;
+}
+.habilidades .linguagens .skills-list li:nth-child(4) {
+  color: #1f7ac5;
+}
+
+
+
+.conteudo .projetos {
+  border-top: 1px solid black;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 90%;
+  margin: auto;
+}
+
+.conteudo .projetos h3 {
+  font-size: 1.6rem;
+  padding-bottom: 20px;
+}
+
+.conteudo .projetos .lista-projetos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.conteudo .projetos .lista-projetos .card-projeto {
+  width: 300px;
+  height: 250px;
+  background-color: #cfc0c3;
+  border-radius: 10px;
+  color: #e6e6e6;
+  padding: 10px;
+  color: #000;
+  background-size: cover;
+} & a{
+  color: black;
+}
+
+.lista-projetos .card-projeto .img-card {
+  width: 100%;
+  height: 60%;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.lista-projetos .card-projeto h3 {
+  padding: 5px 0;
+}
+.lista-projetos .card-projeto p {
+  font-size: 0.8rem;
+  padding: 5px 0;
+}
+
+
+.conteudo .habilidades {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  max-width: 90%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+
+
+.conteudo .habilidades h3{
+  padding: 10px;
+  font-size: 1.6rem;
+}
+
+.habilidades .linguagens{
+  width: 100%;
+}
+
+.habilidades .linguagens .skills-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.habilidades .linguagens .skills-list li{
+  font-size: 2rem;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+}
+
+.card-wrapper {
+  max-width: 100%;
+  margin: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+
+.card-list .card-link .badge {
+  color: #070708;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  background: #dde4ff;
+  width: fit-content;
+  border-radius: 50px;
+}
